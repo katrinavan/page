@@ -1,0 +1,14 @@
+.home {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(163, 213, 237);
+  }
+  
+  .home h1 {
+    color: rgb(105, 9, 240);
+  }
+  
+  .home p {
+    color: #666;
+  }
+  
