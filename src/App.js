@@ -9,11 +9,17 @@ function App() {
   return (
     <Router>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/favorite-videos" element={<FavoriteVideoPage />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/favorite-videos" element={<FavoriteVideoPage />} />
+          {/* ... other routes ... */}
+        </Routes>
+      </div>
+      <footer className="footer">
+        © {new Date().getFullYear()}  All rights reserved.
+      </footer>
     </Router>
   );
 }

@@ -5,10 +5,17 @@
   }
   
   .home h1 {
-    color: rgb(105, 9, 240);
+    color: rgb(72, 141, 253);
   }
   
   .home p {
     color: #666;
+  }
+  .home-image {
+    width: 100%; /* Makes the image full width */
+    height: auto; /* Keeps the image's aspect ratio */
+    display: block; /* Ensures the image does not have extra space around it */
+    margin: 0; /* Removes any default margin */
+    padding: 0; /* Removes any default padding */
   }
   
