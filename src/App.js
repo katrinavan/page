@@ -4,6 +4,8 @@ import NavBar from './components/NavBar';          // NavBar.js is present
 import HomePage from './components/HomePage';      // HomePage.js is present
 import AboutUsPage from './components/AboutUsPage';// AboutUsPage.js is present
 import FavoriteVideoPage from './components/FavoriteVideoPage'; // FavoriteVideoPage.js is present
+import MemberPage from './components/MemberPage'; // FavoriteVideoPage.js is present
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/favorite-videos" element={<FavoriteVideoPage />} />
+          <Route path="/member-page" element={<MemberPage />} />
           {/* ... other routes ... */}
         </Routes>
       </div>

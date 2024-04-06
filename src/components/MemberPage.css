@@ -1,0 +1,14 @@
+.member-page {
+    text-align: center;
+    /* Add other styles as needed */
+  }
+  
+  .member-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0; /* Add some margin around the image */
+  }
+  h1{
+    color: #666;
+  }
+  

@@ -6,8 +6,8 @@ const HomePage = () => {
     return (
       <div className="home-container">
         <div className="home">
-          <h1>Welcome to Noteworthy</h1>
-          <p>This is the home of the Noteworthy acapella group.</p>
+          <h1>Welcome to Random Blog!</h1>
+          <p>This is a blog featuring favorite and contributers to the page!.</p>
         </div>
         {/* The image will appear underneath the blue element */}
         <img src={berkeleyImage} alt="Description" className="home-image" />
