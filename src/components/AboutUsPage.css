@@ -1,0 +1,14 @@
+.about {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+  }
+  
+  .about h1 {
+    color: rgb(111, 152, 255);
+  }
+  
+  .about p {
+    color: #666;
+  }
+  

@@ -1,18 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './NavBar.css'; 
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import './NavBar.css';
 
-const Navbar = () => {
+const NavBar = () => {
+  const [navExpanded, setNavExpanded] = useState(false);
+
+  const toggleNav = () => {
+    setNavExpanded(!navExpanded);
+  };
+
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about-us">About Us</Link></li>
-        <li><Link to="/favorite-videos">Favorite Videos</Link></li>
-
-      </ul>
-    </nav>
+    <>
+      
+      <nav className={`navbar ${navExpanded ? 'expanded' : ''}`}>
+        <NavLink exact to="/" activeClassName="active">Home</NavLink>
+        <NavLink to="/about-us" activeClassName="active">About Us</NavLink>
+        <NavLink to="/favorite-videos" activeClassName="active">Favorite Videos</NavLink>
+        {/* More nav links */}
+      </nav>
+    </>
   );
 };
 
-export default Navbar;
+export default NavBar;
